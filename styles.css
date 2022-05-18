@@ -1,0 +1,113 @@
+:root {
+  --main-bg-color: black;
+  --second-bg-color: white;
+  --font-family: "Press Start 2P", sans-serif;
+  --font-weight: 400;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  height: auto;
+  width: 100%;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 8vw;
+  color: var(--second-bg-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rules p {
+  color: var(--second-bg-color);
+  font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.correct-box {
+  display: table;
+  height: 150px;
+  width: 150px;
+  margin: 5vh auto;
+  background-color: var(--second-bg-color);
+}
+.correct-nunber {
+  font-size: 4rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+input.guess {
+  height: 200px;
+  width: 300px;
+  font-size: 3rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  background-color: var(--second-bg-color);
+  color: var(--main-bg-color);
+  text-align: center;
+}
+button.btn {
+  background-color: var(--second-bg-color);
+  color: var(--main-bg-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 3rem;
+}
+button.btn:hover {
+  cursor: pointer;
+}
+.btn-holder,
+.score-holder {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn,
+.score,
+.highscore {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+/* 
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    } */
