@@ -1,14 +1,28 @@
 'use strict';
 
 // Retry Btn - refresh window
- window.functionName= refreshPage;
-function refreshPage(){
-    window.location.reload();
-    refreshButton.addEventListener('click', refreshPage)
-} 
+// function refreshPage(){
+//     window.location.reload();
+//     refreshButton.addEventListener('click', refreshPage)
+// } 
+
+// Generating Random Secret Number
+const secretNumber = Math.trunc(Math.random()*20)
 
 
-const userGuess = function() {
-document.querySelector(`.guess`).addEventListener(`click`, checkNumber()
-  console.log(userGuess);
+
+
+// check input box
+document.querySelector(`.guess`).addEventListener(`click`, function() {
+const guess = Number(document.querySelector(`.guess`).value);
+console.log(guess, typoeof);
+
+if (!guess) {
+  document.querySelector(`.message`).textContent = `no number`
+} else if (guess === secretNumber) {
+  document.querySelector(`.message`).textContent = `correct number`
+} else if (guess > secretNumber) {
+  document.querySelector(`.message`).textContent = `too high`
+} else if (guess < secretNumber) {
+  document.querySelector(`.message`).textContent = `too low`
 }

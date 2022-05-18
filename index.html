@@ -27,11 +27,14 @@
                 ?
             </p>
         </div>
-        <input type="number" class="guess">
+        <input type="number" class="guess" min="0" max="20">
         <div class="btn-holder">
-            <button class="check btn" onClick="checkNumber()">Check</button>
+            <button class="check btn">Check</button>
             <button class="retry btn" onClick="refreshPage()">Retry</button>
         </div>
+        <p class="message">
+            Take your best guess!
+        </p>
         <div class="score-holder">
             <div class="score">
                 <p>
@@ -45,7 +48,7 @@
         </div>
     </main>
 
-    <script src="" async defer></script>
+    <script src="script.js" async defer></script>
 </body>
 
 </html>
